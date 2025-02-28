@@ -1,0 +1,44 @@
+.body{
+    background-color: rgb(178, 203, 218);
+}
+
+.header{
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display:flex;
+}
+
+.navbar{
+    height: 100px;
+    font-weight: 800;  
+    
+}
+
+.navbar .navbar-collapse {
+    display: flex;
+    justify-content: center; 
+}
+  
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+  
+.navbar .nav-link {
+    text-align: center; 
+}
+.list1{
+    font-size: 20px;
+}
+header{
+    display: flex;
+}
+
+.grid{
+    text-align: center;
+}

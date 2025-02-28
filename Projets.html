@@ -1,0 +1,118 @@
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="Projets.css">
+    <title>PortFolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">A Propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="BTS_SIO.html">BTS SIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Ecole-Entreprise.html">Ecole/Entreprise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Realisations-Missions.html">Realisations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Projets.html">Projets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Veille_Technologique.html">Veille technologie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="image1.jpg" alt="Image 1">
+                        <img src="image2.jpg" alt="Image 2">
+                        <img src="image3.jpg" alt="Image 3">
+                        <img src="image4.jpg" alt="Image 4">
+                        <img src="image5.jpg" alt="Image 5">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Gamehub
+                            <a href="https://github.com/your-github-repo" target="_blank">
+                                <img src="github.png" alt="GitHub" class="github-logo">
+                            </a>
+                        </h5>
+                        <p class="card-text">Creation d'un Site web e-commerce client leger pour vendre des jeux videos ( En Laravel).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="image6.jpg" alt="Image 1">
+                        <img src="image7.jpg" alt="Image 2">
+                        <img src="image8.jpg" alt="Image 3">
+                        <img src="image9.jpg" alt="Image 4">
+                        <img src="image10.jpg" alt="Image 5">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Gestion de Stock
+                            <a href="https://github.com/your-github-repo" target="_blank">
+                                <img src="github.png" alt="GitHub" class="github-logo">
+                            </a>
+                        </h5>
+                        <p class="card-text">Creation d'une application de bureau client lourd pour Gerer des stocks ( En Java)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.card-img-top').forEach(card => {
+            let images = card.querySelectorAll('img');
+            let currentIndex = 0;
+            let interval;
+
+            card.addEventListener('mouseover', () => {
+                interval = setInterval(() => {
+                    images[currentIndex].style.opacity = 0;
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].style.opacity = 1;
+                }, 1000);
+            });
+
+            card.addEventListener('mouseout', () => {
+                clearInterval(interval);
+                images.forEach((img, index) => {
+                    img.style.opacity = index === 0 ? 1 : 0;
+                });
+                currentIndex = 0;
+            });
+        });
+    </script>
+</body>
+</html>
