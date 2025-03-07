@@ -10,39 +10,44 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">A Propos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="BTS_SIO.html">BTS SIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Ecole-Entreprise.html">Ecole/Entreprise</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Realisations-Missions.html">Realisations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Projets.html">Projets</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Veille_Technologique.html">Veille technologie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">A Propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="BTS_SIO.html">BTS SIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ecole-Entreprise.html">Ecole/Entreprise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Realisations-Missions.html">Realisations-E5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Projets.html">Projets-E6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Veille_Technologique.html">Veille technologie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
-    
     <div class="grid">
         <h1>Veille Technologique</h1>
         <h2>Qu'est ce que la veille technologique?</h2>
@@ -53,14 +58,15 @@
      
         </p> 
         
-        <button>
+        <button class="button">
             <a href="https://feedly.com/i/collection/content/user/4cdc787b-4a20-4219-a3d5-01777b379850/category/global.all" target="_blank">Outil de veille</a>
         </button>
     </div>
 
-
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alex Fiifi OPARE AKONOR. Tous droits réservés.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

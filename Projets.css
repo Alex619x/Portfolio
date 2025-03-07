@@ -40,12 +40,14 @@ header {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px; /* Increased height */
     overflow: hidden;
 }
 
@@ -63,6 +65,7 @@ header {
 
 .card-body {
     padding: 20px;
+    flex-grow: 1;
 }
 
 .title {
@@ -78,6 +81,25 @@ header {
     width: 20px;
     height: 20px;
     margin-left: 10px;
+}
+
+.github-link {
+    margin-left: auto;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: #F8F9FA;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Media Queries for Responsive Design */
