@@ -83,14 +83,20 @@ header {
     margin-left: 10px;
 }
 
+.eye-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; /* Adds a small gap between the title and the eye icon */
+}
+
 .github-link {
-    margin-left: auto;
+    margin-left: auto; /* Keeps the GitHub icon aligned to the right */
 }
 
 .card-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px; /* Adds a gap between the eye icon and the GitHub icon */
 }
 
 .footer {
